@@ -1,0 +1,20 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<DialogPane fx:id="dialogPanel" prefHeight="179.0" prefWidth="280.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.vulpes.EntryDialogController">
+   <content>
+       <VBox prefHeight="200.0" prefWidth="100.0">
+           <Label text="Zamiar:"/>
+           <TextField fx:id="zamiarField"/>
+           <Label text="Nr umowy:"/>
+           <TextField fx:id="nrUmowyField"/>
+           <Label text="Nr rejestracyjny:"/>
+           <TextField fx:id="nrRejField"/>
+           <Button text="Dodaj plik" onAction="#openFile"/>
+           <Label fx:id="filePath" text="filename"/>
+       </VBox>
+   </content>
+</DialogPane>
